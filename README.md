@@ -23,7 +23,7 @@ Android fitness tracker for workouts, meals, and water. Kotlin + ViewBinding + S
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [Roadmap](#roadmap)
-- [License](#license)
+- [LICENSE](#license)
 - [Third-Party Licenses](#third-party-licenses)
 
 ## Overview
