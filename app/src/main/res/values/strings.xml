@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">fitness_app</string>
+
+    <string name="profile_title">ملفي الشخصي</string>
+    <string name="user_placeholder">اسم المستخدم</string>
+    <string name="back">رجوع</string>
+
+    <string name="full_name">الاسم الكامل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="age">العمر</string>
+    <string name="weight">الوزن (كغ)</string>
+    <string name="height">الطول (سم)</string>
+
+    <string name="edit">تعديل</string>
+    <string name="save">حفظ</string>
+    <string name="profile_image">صورة الملف الشخصي</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- العناوين الرئيسية -->
+    <string name="title_add_meal">تسجيل الوجبة الغذائية</string>
+    <string name="daily_log_title">📅 السجل الغذائي اليومي</string>
+
+    <!-- إدخال الطعام -->
+    <string name="hint_food_name">أدخل اسم الطعام</string>
+    <string name="btn_scan_barcode">📷 مسح الباركود</string>
+    <string name="btn_add_meal">➕ إضافة الوجبة</string>
+
+    <!-- العناصر الغذائية -->
+    <string name="calories_text">السعرات: %1$s كالوري</string>
+    <string name="protein_text">البروتين: %1$s جم</string>
+    <string name="fat_text">الدهون: %1$s جم</string>
+    <string name="carbs_text">الكربوهيدرات: %1$s جم</string>
+
+    <!-- رسائل عامة (يمكن استخدامها لاحقًا) -->
+    <string name="error_empty_input">يرجى إدخال اسم الطعام</string>
+    <string name="meal_added_success">✅ تم إضافة الوجبة بنجاح</string>
+    <string name="no_meals_today">لا توجد وجبات مسجلة اليوم</string>
+    <string-array name="cup_sizes">
+        <item>200 مل</item>
+        <item>250 مل</item>
+        <item>300 مل</item>
+        <item>500 مل</item>
+    </string-array>
+
+</resources>

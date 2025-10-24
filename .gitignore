@@ -1,0 +1,11 @@
+﻿# Android/Gradle
+.gradle/
+build/
+local.properties
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+key.properties
+captures/

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/input_background"
+
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:elevation="4dp">
+
+    <!-- اسم الوجبة -->
+    <TextView
+        android:id="@+id/mealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اسم الوجبة"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:fontFamily="@font/cairo_medium"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <!-- التفاصيل -->
+    <TextView
+        android:id="@+id/mealDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300 كالوري | 20g بروتين | 10g دهون | 50g كربوهيدرات"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/cairo_medium"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <!-- أزرار الحذف والتعديل -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEditMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏️ تعديل"
+            android:textSize="14sp"
+            android:fontFamily="@font/cairo_medium"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#03A9F4"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnDeleteMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗑️ حذف"
+            android:textSize="14sp"
+            android:fontFamily="@font/cairo_medium"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F44336" />
+    </LinearLayout>
+
+</LinearLayout>

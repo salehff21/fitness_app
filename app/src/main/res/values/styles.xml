@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StyledEdit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/reacle_border</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/cairo_medium</item>
+    </style>
+
+</resources>

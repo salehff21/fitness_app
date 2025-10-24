@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/navigation"
+    android:background="@color/white">
+
+    <!-- حاوية رئيسية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- صورة الشخص الرياضي أعلى الشاشة -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/fitness_image" />
+
+        <!-- عنوان التطبيق (اختياري) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/cairo_medium"
+            android:text="اللياقة البدنية"
+            android:textColor="#6D5BA6"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- عنوان الشاشة: تسجيل حساب جديد -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_medium"
+            android:text="تسجيل حساب جديد"
+            android:textColor="#6D5BA6"
+
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- الحاوية الخلفية (المربّع) التي تحتوي على الحقول والزر -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/login_box_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/id_card"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="  الاسم الرباعي"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_gmail"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="  البريد الإلكتروني"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- العمر -->
+            <EditText
+                android:id="@+id/txt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_password"
+                android:fontFamily="@font/cairo_medium"
+                android:hint=" كلمة المرور"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/age_limit"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="  العمر"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- الوزن -->
+            <EditText
+                android:id="@+id/txt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_weighing"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="  الوزن"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- الطول (سم) -->
+            <EditText
+                android:id="@+id/txt_hight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_wight"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="  الطول (سم)"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- زر إنشاء الحساب -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#6D5BA6"
+                android:fontFamily="@font/cairo_medium"
+                android:text="إنشاء الحساب"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

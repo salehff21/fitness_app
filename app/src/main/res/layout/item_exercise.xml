@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:padding="12dp"
+    android:background="@drawable/reacle_border"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:elevation="2dp"
+    android:clipToPadding="false"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:backgroundTint="#EEF1FA"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_trining"
+
+        android:contentDescription="صورة التمرين" />
+
+    <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="تمرين شد عضلات البطن"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/cairo_medium"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

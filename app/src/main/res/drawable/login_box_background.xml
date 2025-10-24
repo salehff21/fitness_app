@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- لون خلفية المربع -->
+    <solid android:color="#B7B9ED" />
+
+    <!-- حواف مستديرة -->
+    <corners android:radius="12dp" />
+
+    <!-- حشوة داخلية إذا أحببت -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+
+</shape>

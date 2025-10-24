@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- صورة اللوجو أو الرسم -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="شخص يمارس الرياضة"
+            android:src="@drawable/fitness_image" />
+
+        <!-- عنوان التطبيق -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_medium"
+            android:paddingTop="10dp"
+            android:text="اللياقة البدنية"
+            android:textColor="#6D5BA6"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- عنوان تسجيل الدخول -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_medium"
+            android:paddingBottom="10dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#6D5BA6"
+            android:textSize="18sp" />
+
+        <!-- حاوية حقول الإدخال -->
+        <LinearLayout
+            android:id="@+id/loginContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/login_box_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- إدخال اسم المستخدم -->
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_use02r"
+                android:fontFamily="@font/cairo_medium"
+                android:textColor="@color/black"
+                android:hint="اسم المستخدم"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textDirection="rtl" />
+
+            <!-- إدخال كلمة المرور -->
+            <EditText
+                android:id="@+id/txtLogin_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_background"
+                android:drawableEnd="@drawable/ic_lock"
+                android:fontFamily="@font/cairo_medium"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <!-- رابط التسجيل -->
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cairo_medium"
+                android:text="ليس لديك حساب؟ اضغط للتسجيل."
+                android:textColor="#6D5BA6"
+                android:textSize="14sp" />
+
+            <!-- زر تسجيل الدخول -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/Main3"
+                android:fontFamily="@font/cairo_medium"
+                android:text="تسجيل الدخول"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- أو التسجيل عبر وسائل أخرى -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أو قم بالتسجيل عبر"
+            android:textColor="#990999"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/cairo_medium" />
+
+        <!-- أزرار تسجيل الدخول عبر جوجل وفيسبوك -->
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_google"
+            android:text="تسجيل الدخول عبر جوجل"
+            android:textColor="#444"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="تسجيل الدخول عبر فيسبوك"
+            android:textColor="#444"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

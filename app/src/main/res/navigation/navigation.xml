@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment"> <!-- ✅ جعل LoginFragment هو البداية -->
+
+    <!-- LoginFragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fitness_app.FragmentLogin"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_fragmentHi"
+            app:destination="@id/fragmentHi" />
+
+    </fragment>
+
+    <!-- RegisterFragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.fitness_app.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+
+    <!-- WelcomeFragment -->
+
+    <!-- HomeFragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fitness_app.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addFoodsFragment"
+            app:destination="@id/addFoodsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addWaterFragment"
+            app:destination="@id/addWaterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHi"
+        android:name="com.example.fitness_app.FragmentHi"
+        android:label="fragment_hi"
+        tools:layout="@layout/fragment_hi" >
+        <action
+            android:id="@+id/action_fragmentHi_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFoodsFragment"
+        android:name="com.example.fitness_app.AddFoodsFragment"
+        android:label="fragment_add_foods"
+        tools:layout="@layout/fragment_add_foods" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.fitness_app.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.fitness_app.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/addWaterFragment"
+        android:name="com.example.fitness_app.AddWaterFragment"
+        android:label="fragment_add_water"
+        tools:layout="@layout/fragment_add_water" />
+</navigation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_margin="16dp"
+    android:background="@drawable/input_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- ✅ صورة معبّرة -->
+        <ImageView
+            android:id="@+id/ivEditMealImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_food"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Meal Icon" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تعديل الوجـــبات"
+            android:textSize="28sp"
+            android:textColor="@color/SkyBlue"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo_medium"
+            android:gravity="center" />
+        <!-- الحقول -->
+        <EditText
+            android:id="@+id/etEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اسم الطعام"
+            android:padding="10dp"
+            android:fontFamily="@font/cairo_medium"
+            android:background="@drawable/reacle_border"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEditCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="السعرات (كالوري)"
+            android:inputType="number"
+            android:padding="10dp"
+            android:fontFamily="@font/cairo_medium"
+            android:background="@drawable/reacle_border"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEditProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="بروتين (غرام)"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:fontFamily="@font/cairo_medium"
+            android:background="@drawable/reacle_border"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEditFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="دهون (غرام)"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:fontFamily="@font/cairo_medium"
+            android:background="@drawable/reacle_border"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEditCarbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="كربوهيدرات (غرام)"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:fontFamily="@font/cairo_medium"
+            android:background="@drawable/reacle_border"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ✅ أزرار الحفظ والإلغاء -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="❌ إلغاء"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#B0BEC5"
+                android:fontFamily="@font/cairo_medium"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSaveEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✅ حفظ"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#4CAF50"
+                android:fontFamily="@font/cairo_medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragmentHi">
+
+    <!-- الشريط العلوي (Bar) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6D5BA6"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <!-- أيقونة الرجوع (سهم) -->
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_toback"
+            android:layout_marginEnd="8dp" />
+
+        <!-- عنوان الشريط -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="اللياقة البدنية"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/cairo_medium"
+            android:textStyle="bold" />
+
+        <!-- أيقونة الجهاز الرياضي -->
+        <ImageView
+            android:id="@+id/ivTreadmill"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_walk" />
+
+    </LinearLayout>
+
+    <!-- الحاوية الرئيسية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- رسالة الترحيب -->
+        <TextView
+            android:id="@+id/tvWelcomeMessage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:fontFamily="@font/calibrib"
+            android:lineSpacingExtra="4dp"
+            android:text="“مرحباً بك في تطبيق اللياقة البدنية حيث تبدأ رحلتك نحو حياة أكثر صحة ولياقة!”"
+            android:textColor="@color/Main3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- صورة التمارين -->
+        <ImageView
+            android:id="@+id/ivCycling"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_fitneses" />
+
+        <!-- زر الاستمرار -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#6D5BA6"
+            android:fontFamily="@font/cairo_medium"
+            android:text="استمر"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</FrameLayout>
